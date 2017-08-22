@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainMenuController" customModule="PracticeGame2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,120 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zh5-Tr-Auy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia1-dd-t3T">
+                                <rect key="frame" x="132" y="275" width="111" height="116"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Play!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4v-0i-5Qf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zh5-Tr-Auy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KOD-lk-Uce"/>
+                            <constraint firstItem="Zh5-Tr-Auy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="dtq-hF-a3x"/>
+                            <constraint firstItem="ia1-dd-t3T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eIk-84-dtY"/>
+                            <constraint firstItem="Zh5-Tr-Auy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="g8j-1j-dIW"/>
+                            <constraint firstItem="Zh5-Tr-Auy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gpw-No-Yvz"/>
+                            <constraint firstItem="ia1-dd-t3T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qHq-B1-FpX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewBackground" destination="Zh5-Tr-Auy" id="qDt-zo-Kh6"/>
+                        <outlet property="pushButton" destination="ia1-dd-t3T" id="YFa-tz-Pu5"/>
+                        <segue destination="enz-Jj-PRy" kind="show" identifier="goToGameSegue" id="cbf-5s-Jp6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Game Controller-->
+        <scene sceneID="c73-2G-oKM">
+            <objects>
+                <viewController id="enz-Jj-PRy" customClass="GameController" customModule="PracticeGame2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jHQ-AV-ndh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rc0-jg-Erb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rNs-Fe-yn7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-F2-XoV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYD-ol-F5O">
+                                <rect key="frame" x="0.0" y="99" width="187" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Llama">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LlamaButtonTouchInside:" destination="enz-Jj-PRy" eventType="touchUpInside" id="QTZ-Kj-JMr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgy-ON-b86">
+                                <rect key="frame" x="195" y="99" width="180" height="567"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Duck">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DuckButtonTouchInside:" destination="enz-Jj-PRy" eventType="touchUpInside" id="xuX-vj-WHs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diC-lK-ZFd">
+                                <rect key="frame" x="130" y="70" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JRd-F2-XoV" firstAttribute="centerY" secondItem="rNs-Fe-yn7" secondAttribute="centerY" id="3gk-kz-02i"/>
+                            <constraint firstItem="JRd-F2-XoV" firstAttribute="centerX" secondItem="rNs-Fe-yn7" secondAttribute="centerX" id="9ZO-W5-wNe"/>
+                            <constraint firstItem="JRd-F2-XoV" firstAttribute="height" secondItem="rNs-Fe-yn7" secondAttribute="height" id="nnE-Mk-8N4"/>
+                            <constraint firstItem="JRd-F2-XoV" firstAttribute="width" secondItem="rNs-Fe-yn7" secondAttribute="width" id="pkx-I9-bF1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JRd-F2-XoV" id="iJV-rY-ujy"/>
+                        <outlet property="scoreNumber" destination="diC-lK-ZFd" id="Mab-Rh-CFI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrw-PN-nad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X61-sd-vQF">
+            <objects>
+                <viewController id="pZ2-Kj-607" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ek-cP-4Cj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Di1-LY-WsO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9bN-NB-nsA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVb-1F-DE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="139"/>
         </scene>
     </scenes>
 </document>
