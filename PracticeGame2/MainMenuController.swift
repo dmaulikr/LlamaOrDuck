@@ -17,7 +17,7 @@ class MainMenuController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        imageViewBackground.image = #imageLiteral(resourceName: "MainPagePicture2")
+        imageViewBackground.image = #imageLiteral(resourceName: "RainBowBackground")
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +29,9 @@ class MainMenuController: UIViewController {
         performSegue(withIdentifier: "goToGameSegue", sender: self)
     }
     
+    @IBAction func pushButtonHowToPlay(_ sender: Any) {
+        performSegue(withIdentifier: "goToHow", sender: self)
+    }
     
 }
 

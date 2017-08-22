@@ -13,7 +13,7 @@ class GameController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scoreTitle: UILabel!
-    @IBOutlet weak var scoreNumber: UILabel!
+    @IBOutlet weak var timerTitle: UILabel!
     
     var imageType = 0
     var score = 0
@@ -21,9 +21,7 @@ class GameController: UIViewController {
     let imageCount = 3
     let llamaImages = [#imageLiteral(resourceName: "Llama1"), #imageLiteral(resourceName: "Llama2"), #imageLiteral(resourceName: "Llama3")]
     let duckImages = [#imageLiteral(resourceName: "Duck1"), #imageLiteral(resourceName: "Duck2"), #imageLiteral(resourceName: "Duck3")]
-    let timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: <#T##Bool#>
-    
-    
+   
     
     
     
@@ -32,7 +30,24 @@ class GameController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
         print("You've entered the game")
         imageView.image = #imageLiteral(resourceName: "Llama1")
+        
+        let _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
+            (t) in
+            self.time = self.time - 1
+            self.updateTimeText()
+            
+        }
+        
     }
+    
+    func updateTimeText(){
+        if (self.time == 0){
+            performSegue(withIdentifier: "goToEndMenuSegue", sender: self)
+        }
+        timerTitle.text = "Time: \(self.time)"
+        
+    }
+    
     
     func changeImages(){
         let randomImage = Int(arc4random_uniform(UInt32(imageCount)))
@@ -59,7 +74,7 @@ class GameController: UIViewController {
             print("Wrong!")
         }
         print("Score: \(score)")
-        scoreNumber.text = "Score: \(score)"
+        scoreTitle.text = "Score: \(score)"
         changeImages()
         
     }
@@ -72,7 +87,7 @@ class GameController: UIViewController {
             print("Wrong!")
         }
         print("Score: \(score)")
-        scoreNumber.text = "Score: \(score)"
+        scoreTitle.text = "Score: \(score)"
         changeImages()
     }
     
