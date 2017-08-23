@@ -12,6 +12,8 @@ import UIKit
 class EndMenuController: UIViewController {
     
     @IBOutlet weak var imageViewEnd: UIImageView!
+    @IBOutlet weak var endYourScoreIs: UILabel!
+    @IBOutlet weak var endScoreNumber: UILabel!
     
     
     override func viewDidLoad() {
@@ -19,6 +21,19 @@ class EndMenuController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         imageViewEnd.image = #imageLiteral(resourceName: "RainBowBackground")
+        
     
     }
+    
+    
+    @IBAction func buttonPlayAgain(_ sender: Any) {
+        performSegue(withIdentifier: "goBackToGame", sender: self)
+    }
+    
+    @IBAction func buttonBackToMain(_ sender: Any) {
+        performSegue(withIdentifier: "goBackToMain", sender: self)
+    }
+    
+    
+    
 }

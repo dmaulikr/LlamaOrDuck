@@ -42,6 +42,7 @@ class GameController: UIViewController {
     
     func updateTimeText(){
         if (self.time == 0){
+            
             performSegue(withIdentifier: "goToEndMenuSegue", sender: self)
         }
         timerTitle.text = "Time: \(self.time)"
@@ -75,6 +76,7 @@ class GameController: UIViewController {
         }
         print("Score: \(score)")
         scoreTitle.text = "Score: \(score)"
+        
         changeImages()
         
     }

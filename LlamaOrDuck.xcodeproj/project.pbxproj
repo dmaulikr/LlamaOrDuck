@@ -39,17 +39,17 @@
 /* Begin PBXFileReference section */
 		A64721EE1F4CCC4B00D7D336 /* EndMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndMenuController.swift; sourceTree = "<group>"; };
 		A64721F01F4CD4C400D7D336 /* HowToPlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayController.swift; sourceTree = "<group>"; };
-		A696713F1F4CA6B300534E16 /* PracticeGame2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeGame2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A696713F1F4CA6B300534E16 /* LlamaOrDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LlamaOrDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69671421F4CA6B300534E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69671441F4CA6B300534E16 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		A69671471F4CA6B300534E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A69671491F4CA6B300534E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A696714C1F4CA6B300534E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A696714E1F4CA6B300534E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A69671531F4CA6B300534E16 /* PracticeGame2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeGame2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69671531F4CA6B300534E16 /* LlamaOrDuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LlamaOrDuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69671571F4CA6B300534E16 /* PracticeGame2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeGame2Tests.swift; sourceTree = "<group>"; };
 		A69671591F4CA6B300534E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A696715E1F4CA6B300534E16 /* PracticeGame2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeGame2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A696715E1F4CA6B300534E16 /* LlamaOrDuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LlamaOrDuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69671621F4CA6B300534E16 /* PracticeGame2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeGame2UITests.swift; sourceTree = "<group>"; };
 		A69671641F4CA6B300534E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69671701F4CA8BF00534E16 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		A69671361F4CA6B300534E16 = {
 			isa = PBXGroup;
 			children = (
-				A69671411F4CA6B300534E16 /* PracticeGame2 */,
-				A69671561F4CA6B300534E16 /* PracticeGame2Tests */,
-				A69671611F4CA6B300534E16 /* PracticeGame2UITests */,
+				A69671411F4CA6B300534E16 /* LlamaOrDuck */,
+				A69671561F4CA6B300534E16 /* LlamaOrDuckTests */,
+				A69671611F4CA6B300534E16 /* LlamaOrDuckUITests */,
 				A69671401F4CA6B300534E16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,14 +93,14 @@
 		A69671401F4CA6B300534E16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A696713F1F4CA6B300534E16 /* PracticeGame2.app */,
-				A69671531F4CA6B300534E16 /* PracticeGame2Tests.xctest */,
-				A696715E1F4CA6B300534E16 /* PracticeGame2UITests.xctest */,
+				A696713F1F4CA6B300534E16 /* LlamaOrDuck.app */,
+				A69671531F4CA6B300534E16 /* LlamaOrDuckTests.xctest */,
+				A696715E1F4CA6B300534E16 /* LlamaOrDuckUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A69671411F4CA6B300534E16 /* PracticeGame2 */ = {
+		A69671411F4CA6B300534E16 /* LlamaOrDuck */ = {
 			isa = PBXGroup;
 			children = (
 				A69671421F4CA6B300534E16 /* AppDelegate.swift */,
@@ -113,33 +113,36 @@
 				A696714B1F4CA6B300534E16 /* LaunchScreen.storyboard */,
 				A696714E1F4CA6B300534E16 /* Info.plist */,
 			);
+			name = LlamaOrDuck;
 			path = PracticeGame2;
 			sourceTree = "<group>";
 		};
-		A69671561F4CA6B300534E16 /* PracticeGame2Tests */ = {
+		A69671561F4CA6B300534E16 /* LlamaOrDuckTests */ = {
 			isa = PBXGroup;
 			children = (
 				A69671571F4CA6B300534E16 /* PracticeGame2Tests.swift */,
 				A69671591F4CA6B300534E16 /* Info.plist */,
 			);
+			name = LlamaOrDuckTests;
 			path = PracticeGame2Tests;
 			sourceTree = "<group>";
 		};
-		A69671611F4CA6B300534E16 /* PracticeGame2UITests */ = {
+		A69671611F4CA6B300534E16 /* LlamaOrDuckUITests */ = {
 			isa = PBXGroup;
 			children = (
 				A69671621F4CA6B300534E16 /* PracticeGame2UITests.swift */,
 				A69671641F4CA6B300534E16 /* Info.plist */,
 			);
+			name = LlamaOrDuckUITests;
 			path = PracticeGame2UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A696713E1F4CA6B300534E16 /* PracticeGame2 */ = {
+		A696713E1F4CA6B300534E16 /* LlamaOrDuck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A69671671F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "PracticeGame2" */;
+			buildConfigurationList = A69671671F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "LlamaOrDuck" */;
 			buildPhases = (
 				A696713B1F4CA6B300534E16 /* Sources */,
 				A696713C1F4CA6B300534E16 /* Frameworks */,
@@ -149,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = PracticeGame2;
+			name = LlamaOrDuck;
 			productName = PracticeGame2;
-			productReference = A696713F1F4CA6B300534E16 /* PracticeGame2.app */;
+			productReference = A696713F1F4CA6B300534E16 /* LlamaOrDuck.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A69671521F4CA6B300534E16 /* PracticeGame2Tests */ = {
+		A69671521F4CA6B300534E16 /* LlamaOrDuckTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A696716A1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "PracticeGame2Tests" */;
+			buildConfigurationList = A696716A1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "LlamaOrDuckTests" */;
 			buildPhases = (
 				A696714F1F4CA6B300534E16 /* Sources */,
 				A69671501F4CA6B300534E16 /* Frameworks */,
@@ -167,14 +170,14 @@
 			dependencies = (
 				A69671551F4CA6B300534E16 /* PBXTargetDependency */,
 			);
-			name = PracticeGame2Tests;
+			name = LlamaOrDuckTests;
 			productName = PracticeGame2Tests;
-			productReference = A69671531F4CA6B300534E16 /* PracticeGame2Tests.xctest */;
+			productReference = A69671531F4CA6B300534E16 /* LlamaOrDuckTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A696715D1F4CA6B300534E16 /* PracticeGame2UITests */ = {
+		A696715D1F4CA6B300534E16 /* LlamaOrDuckUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A696716D1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "PracticeGame2UITests" */;
+			buildConfigurationList = A696716D1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "LlamaOrDuckUITests" */;
 			buildPhases = (
 				A696715A1F4CA6B300534E16 /* Sources */,
 				A696715B1F4CA6B300534E16 /* Frameworks */,
@@ -185,9 +188,9 @@
 			dependencies = (
 				A69671601F4CA6B300534E16 /* PBXTargetDependency */,
 			);
-			name = PracticeGame2UITests;
+			name = LlamaOrDuckUITests;
 			productName = PracticeGame2UITests;
-			productReference = A696715E1F4CA6B300534E16 /* PracticeGame2UITests.xctest */;
+			productReference = A696715E1F4CA6B300534E16 /* LlamaOrDuckUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A696713A1F4CA6B300534E16 /* Build configuration list for PBXProject "PracticeGame2" */;
+			buildConfigurationList = A696713A1F4CA6B300534E16 /* Build configuration list for PBXProject "LlamaOrDuck" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,9 +235,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A696713E1F4CA6B300534E16 /* PracticeGame2 */,
-				A69671521F4CA6B300534E16 /* PracticeGame2Tests */,
-				A696715D1F4CA6B300534E16 /* PracticeGame2UITests */,
+				A696713E1F4CA6B300534E16 /* LlamaOrDuck */,
+				A69671521F4CA6B300534E16 /* LlamaOrDuckTests */,
+				A696715D1F4CA6B300534E16 /* LlamaOrDuckUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,12 +303,12 @@
 /* Begin PBXTargetDependency section */
 		A69671551F4CA6B300534E16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A696713E1F4CA6B300534E16 /* PracticeGame2 */;
+			target = A696713E1F4CA6B300534E16 /* LlamaOrDuck */;
 			targetProxy = A69671541F4CA6B300534E16 /* PBXContainerItemProxy */;
 		};
 		A69671601F4CA6B300534E16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A696713E1F4CA6B300534E16 /* PracticeGame2 */;
+			target = A696713E1F4CA6B300534E16 /* LlamaOrDuck */;
 			targetProxy = A696715F1F4CA6B300534E16 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -430,7 +433,7 @@
 				DEVELOPMENT_TEAM = UQCW8P856X;
 				INFOPLIST_FILE = PracticeGame2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teachyourselfios.PracticeGame2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterkim.LlamaOrDuck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -443,7 +446,7 @@
 				DEVELOPMENT_TEAM = UQCW8P856X;
 				INFOPLIST_FILE = PracticeGame2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teachyourselfios.PracticeGame2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterkim.LlamaOrDuck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -460,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teachyourselfios.PracticeGame2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PracticeGame2.app/PracticeGame2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LlamaOrDuck.app/LlamaOrDuck";
 			};
 			name = Debug;
 		};
@@ -475,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teachyourselfios.PracticeGame2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PracticeGame2.app/PracticeGame2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LlamaOrDuck.app/LlamaOrDuck";
 			};
 			name = Release;
 		};
@@ -510,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A696713A1F4CA6B300534E16 /* Build configuration list for PBXProject "PracticeGame2" */ = {
+		A696713A1F4CA6B300534E16 /* Build configuration list for PBXProject "LlamaOrDuck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A69671651F4CA6B300534E16 /* Debug */,
@@ -519,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A69671671F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "PracticeGame2" */ = {
+		A69671671F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "LlamaOrDuck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A69671681F4CA6B300534E16 /* Debug */,
@@ -528,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A696716A1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "PracticeGame2Tests" */ = {
+		A696716A1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "LlamaOrDuckTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A696716B1F4CA6B300534E16 /* Debug */,
@@ -537,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A696716D1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "PracticeGame2UITests" */ = {
+		A696716D1F4CA6B300534E16 /* Build configuration list for PBXNativeTarget "LlamaOrDuckUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A696716E1F4CA6B300534E16 /* Debug */,

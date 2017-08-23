@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-               BuildableName = "PracticeGame2.app"
-               BlueprintName = "PracticeGame2"
-               ReferencedContainer = "container:PracticeGame2.xcodeproj">
+               BuildableName = "LlamaOrDuck.app"
+               BlueprintName = "LlamaOrDuck"
+               ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A69671521F4CA6B300534E16"
-               BuildableName = "PracticeGame2Tests.xctest"
-               BlueprintName = "PracticeGame2Tests"
-               ReferencedContainer = "container:PracticeGame2.xcodeproj">
+               BuildableName = "LlamaOrDuckTests.xctest"
+               BlueprintName = "LlamaOrDuckTests"
+               ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A696715D1F4CA6B300534E16"
-               BuildableName = "PracticeGame2UITests.xctest"
-               BlueprintName = "PracticeGame2UITests"
-               ReferencedContainer = "container:PracticeGame2.xcodeproj">
+               BuildableName = "LlamaOrDuckUITests.xctest"
+               BlueprintName = "LlamaOrDuckUITests"
+               ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-            BuildableName = "PracticeGame2.app"
-            BlueprintName = "PracticeGame2"
-            ReferencedContainer = "container:PracticeGame2.xcodeproj">
+            BuildableName = "LlamaOrDuck.app"
+            BlueprintName = "LlamaOrDuck"
+            ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-            BuildableName = "PracticeGame2.app"
-            BlueprintName = "PracticeGame2"
-            ReferencedContainer = "container:PracticeGame2.xcodeproj">
+            BuildableName = "LlamaOrDuck.app"
+            BlueprintName = "LlamaOrDuck"
+            ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-            BuildableName = "PracticeGame2.app"
-            BlueprintName = "PracticeGame2"
-            ReferencedContainer = "container:PracticeGame2.xcodeproj">
+            BuildableName = "LlamaOrDuck.app"
+            BlueprintName = "LlamaOrDuck"
+            ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
