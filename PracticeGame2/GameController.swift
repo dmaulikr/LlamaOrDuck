@@ -9,18 +9,21 @@
 import Foundation
 import UIKit
 
+
 class GameController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scoreTitle: UILabel!
     @IBOutlet weak var timerTitle: UILabel!
     
+    var score = Int()
+    var defaults = UserDefaults.standard
+    
     var imageType = 0
-    var score = 0
     var time = 20
-    let imageCount = 3
-    let llamaImages = [#imageLiteral(resourceName: "Llama1"), #imageLiteral(resourceName: "Llama2"), #imageLiteral(resourceName: "Llama3")]
-    let duckImages = [#imageLiteral(resourceName: "Duck1"), #imageLiteral(resourceName: "Duck2"), #imageLiteral(resourceName: "Duck3")]
+    let imageCount = 7
+    let llamaImages = [#imageLiteral(resourceName: "Llama1"), #imageLiteral(resourceName: "Llama2"), #imageLiteral(resourceName: "Llama3"), #imageLiteral(resourceName: "Llama4"), #imageLiteral(resourceName: "Llama5"), #imageLiteral(resourceName: "Llama6"), #imageLiteral(resourceName: "Llama7")]
+    let duckImages = [#imageLiteral(resourceName: "Duck1"), #imageLiteral(resourceName: "Duck2"), #imageLiteral(resourceName: "Duck3"), #imageLiteral(resourceName: "Duck4"), #imageLiteral(resourceName: "Duck5"), #imageLiteral(resourceName: "Duck6"), #imageLiteral(resourceName: "Duck7")]
    
     
     
@@ -34,15 +37,15 @@ class GameController: UIViewController {
         let _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
             (t) in
             self.time = self.time - 1
-            self.updateTimeText()
+            self.updateTimeOrEnd()
             
         }
         
     }
     
-    func updateTimeText(){
+    func updateTimeOrEnd(){
         if (self.time == 0){
-            
+            defaults.set(score, forKey:"score")
             performSegue(withIdentifier: "goToEndMenuSegue", sender: self)
         }
         timerTitle.text = "Time: \(self.time)"

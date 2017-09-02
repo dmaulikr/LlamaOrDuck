@@ -15,12 +15,15 @@ class EndMenuController: UIViewController {
     @IBOutlet weak var endYourScoreIs: UILabel!
     @IBOutlet weak var endScoreNumber: UILabel!
     
+    let scoreFromGameScene = UserDefaults.standard.integer(forKey: "score")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         imageViewEnd.image = #imageLiteral(resourceName: "RainBowBackground")
+        
+        endScoreNumber.text = "Your score: \(scoreFromGameScene)"
         
     
     }
