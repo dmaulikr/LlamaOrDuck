@@ -7,8 +7,7 @@
 //
 
 import XCTest
-@testable import PracticeGame2
-
+@testable import LlamaOrDuck
 class LlamaOrDuckTests: XCTestCase {
     
     override func setUp() {
