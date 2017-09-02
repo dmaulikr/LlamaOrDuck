@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-               BuildableName = "LlamaOrDuck.app"
-               BlueprintName = "LlamaOrDuck"
-               ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
+               BuildableName = "LlamaOrDuckApp.app"
+               BlueprintName = "LlamaOrDuckApp"
+               ReferencedContainer = "container:LlamaOrDuckApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A69671521F4CA6B300534E16"
-               BuildableName = "LlamaOrDuckTests.xctest"
-               BlueprintName = "LlamaOrDuckTests"
-               ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
+               BuildableName = "LlamaOrDuckAppTests.xctest"
+               BlueprintName = "LlamaOrDuckAppTests"
+               ReferencedContainer = "container:LlamaOrDuckApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A696715D1F4CA6B300534E16"
-               BuildableName = "LlamaOrDuckUITests.xctest"
-               BlueprintName = "LlamaOrDuckUITests"
-               ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
+               BuildableName = "LlamaOrDuckAppUITests.xctest"
+               BlueprintName = "LlamaOrDuckAppUITests"
+               ReferencedContainer = "container:LlamaOrDuckApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-            BuildableName = "LlamaOrDuck.app"
-            BlueprintName = "LlamaOrDuck"
-            ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
+            BuildableName = "LlamaOrDuckApp.app"
+            BlueprintName = "LlamaOrDuckApp"
+            ReferencedContainer = "container:LlamaOrDuckApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-            BuildableName = "LlamaOrDuck.app"
-            BlueprintName = "LlamaOrDuck"
-            ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
+            BuildableName = "LlamaOrDuckApp.app"
+            BlueprintName = "LlamaOrDuckApp"
+            ReferencedContainer = "container:LlamaOrDuckApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A696713E1F4CA6B300534E16"
-            BuildableName = "LlamaOrDuck.app"
-            BlueprintName = "LlamaOrDuck"
-            ReferencedContainer = "container:LlamaOrDuck.xcodeproj">
+            BuildableName = "LlamaOrDuckApp.app"
+            BlueprintName = "LlamaOrDuckApp"
+            ReferencedContainer = "container:LlamaOrDuckApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
