@@ -9,7 +9,7 @@
 import XCTest
 @testable import PracticeGame2
 
-class PracticeGame2Tests: XCTestCase {
+class LlamaOrDuckTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
